@@ -1,11 +1,11 @@
 [gd_scene format=4 uid="uid://bxqhsqmn06ey4"]
 
-[ext_resource type="Texture2D" uid="uid://dess0h2kirxf5" path="res://assets/images/levelbg.png" id="1_045es"]
-[ext_resource type="Texture2D" uid="uid://ije588n7l5e5" path="res://assets/textures/Tileset/tileset.png" id="2_omn1t"]
-[ext_resource type="Texture2D" uid="uid://dp85h68ucoxge" path="res://assets/textures/Tileset/vegetation.png" id="3_lf3p4"]
-[ext_resource type="Texture2D" uid="uid://cdwd6iuev8ihn" path="res://assets/textures/fix.png" id="4_yydhl"]
-[ext_resource type="Texture2D" uid="uid://d1yhn6golnlhk" path="res://assets/textures/lab_table.png" id="5_bekh1"]
-[ext_resource type="Texture2D" uid="uid://bkbx8uyqg52qk" path="res://assets/textures/flask_stand.png" id="6_8bcou"]
+[ext_resource type="Texture2D" uid="uid://dess0h2kirxf5" path="res://assets/world/levelbg.png" id="1_045es"]
+[ext_resource type="Texture2D" uid="uid://ije588n7l5e5" path="res://assets/world/Tileset/tileset.png" id="2_omn1t"]
+[ext_resource type="Texture2D" uid="uid://dp85h68ucoxge" path="res://assets/world/Tileset/vegetation.png" id="3_lf3p4"]
+[ext_resource type="Texture2D" uid="uid://cdwd6iuev8ihn" path="res://assets/world/Tileset/fix.png" id="4_yydhl"]
+[ext_resource type="Texture2D" uid="uid://d1yhn6golnlhk" path="res://assets/world/Tileset/lab_table.png" id="5_bekh1"]
+[ext_resource type="Texture2D" uid="uid://bkbx8uyqg52qk" path="res://assets/world/Tileset/flask_stand.png" id="6_8bcou"]
 [ext_resource type="PackedScene" uid="uid://dtlt58huevony" path="res://scenes/char.tscn" id="7_f7u7y"]
 [ext_resource type="PackedScene" uid="uid://0qmu2aet1v1p" path="res://scenes/ui.tscn" id="8_jq2cn"]
 

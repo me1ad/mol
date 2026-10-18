@@ -25,7 +25,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_ooenv")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }, {
@@ -42,7 +42,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("5_j7sdd")
 }],
-"loop": true,
+"loop": 1,
 "name": &"moving",
 "speed": 5.0
 }]
@@ -50,10 +50,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_evd5t"]
 size = Vector2(28, 28)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1474960479]
 script = ExtResource("1_idxh8")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1988404292]
 texture_filter = 1
 position = Vector2(0, -11)
 scale = Vector2(2, 2)
@@ -61,5 +61,5 @@ sprite_frames = SubResource("SpriteFrames_txq1h")
 animation = &"moving"
 frame_progress = 0.268283
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=631844191]
 shape = SubResource("RectangleShape2D_evd5t")

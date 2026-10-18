@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://deau4808xhr6e"]
 
 [ext_resource type="Script" uid="uid://dcojvabpssbv5" path="res://scripts/levelselect.gd" id="1_xuh2y"]
-[ext_resource type="Texture2D" uid="uid://dv8k1n4bjsxni" path="res://assets/images/levelselectbg.png" id="2_vttqt"]
-[ext_resource type="Texture2D" uid="uid://bxuyltpylsaif" path="res://assets/images/levelbox.png" id="3_6rap8"]
+[ext_resource type="Texture2D" uid="uid://dv8k1n4bjsxni" path="res://assets/world/gui/levelselectbg.png" id="2_vttqt"]
+[ext_resource type="Texture2D" uid="uid://bxuyltpylsaif" path="res://assets/world/gui/levelbox.png" id="3_6rap8"]
 [ext_resource type="Script" uid="uid://cx6cni0inlij3" path="res://scripts/levelbutton.gd" id="4_6rap8"]
 [ext_resource type="FontFile" uid="uid://60tcyktevjmh" path="res://assets/fonts/Olondona.otf" id="5_nqdjo"]
 [ext_resource type="FontFile" uid="uid://duy4uija42wev" path="res://assets/fonts/OldLondon.ttf" id="6_aaiik"]

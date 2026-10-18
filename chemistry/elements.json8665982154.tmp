@@ -1,6 +1,4 @@
-extends JSON
-
-var elements = {
+{
   "by_symbol": {
 	"H": {
 	  "name": "Hydrogen",

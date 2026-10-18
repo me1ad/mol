@@ -1,9 +1,10 @@
 extends Button
 
-@onready var label: Label = $Label
+@onready var label: Label = get_child(-1)
 
-const HOVER_SIZE = 28
-const NORMAL_SIZE = 25
+@onready var NORMAL_SIZE = label.label_settings.font_size
+@onready var HOVER_SIZE = NORMAL_SIZE + 3
+
 
 func _on_mouse_entered() -> void:
 	label.label_settings.font_size = HOVER_SIZE

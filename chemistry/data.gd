@@ -1,6 +1,6 @@
 extends Node
 
-var json_path = "res://chemistry/data/elements.json"
+var json_path = "res://chemistry/elements.json"
 
 var elements: Dictionary = {}
 var stp = {
@@ -13,15 +13,14 @@ func _ready():
 
 func load_json():
 	var file = FileAccess.open(json_path, FileAccess.READ)
-	assert(file.file_exists(json_path),"File path does not exist")
+	assert(FileAccess.file_exists(json_path),"File path does not exist")
 
 	var json = file.get_as_text()
 
 	var json_object = JSON.new()
 	
-	
 	json_object.parse(json)
-
+	
 	elements = json_object.data
 
 	return elements

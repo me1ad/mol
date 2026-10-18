@@ -118,6 +118,18 @@ font_size = 25
 font_color = Color(0, 0.76282156, 0.24181616, 1)
 outline_size = 10
 
+[sub_resource type="LabelSettings" id="LabelSettings_8ln24"]
+font = ExtResource("4_oa1go")
+font_size = 25
+font_color = Color(0, 0.76282156, 0.24181616, 1)
+outline_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_rtw2f"]
+font = ExtResource("4_oa1go")
+font_size = 25
+font_color = Color(0, 0.76282156, 0.24181616, 1)
+outline_size = 10
+
 [node name="Main Menu" type="Node2D" unique_id=440873365]
 script = ExtResource("1_8ln24")
 
@@ -219,7 +231,7 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "< level select >"
-label_settings = SubResource("LabelSettings_6lf1r")
+label_settings = SubResource("LabelSettings_8ln24")
 horizontal_alignment = 1
 
 [node name="Quit" type="Button" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer" unique_id=509678121]
@@ -229,6 +241,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
 text = " "
+script = ExtResource("3_rtw2f")
 
 [node name="Label" type="Label" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" unique_id=776908679]
 layout_mode = 1
@@ -244,8 +257,11 @@ offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
 text = "< quit >"
-label_settings = SubResource("LabelSettings_6lf1r")
+label_settings = SubResource("LabelSettings_rtw2f")
 horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=200389322]
+offset = Vector2(256, 128)
 
 [connection signal="button_down" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" to="." method="_on_play_button_down"]
 [connection signal="mouse_entered" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" method="_on_mouse_entered"]

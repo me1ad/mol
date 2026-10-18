@@ -1,8 +1,217 @@
 [gd_scene format=3 uid="uid://deau4808xhr6e"]
 
 [ext_resource type="Script" uid="uid://dcojvabpssbv5" path="res://scripts/levelselect.gd" id="1_xuh2y"]
+[ext_resource type="Texture2D" uid="uid://dv8k1n4bjsxni" path="res://assets/images/levelselectbg.png" id="2_vttqt"]
+[ext_resource type="Texture2D" uid="uid://bxuyltpylsaif" path="res://assets/images/levelbox.png" id="3_6rap8"]
+[ext_resource type="Script" uid="uid://cx6cni0inlij3" path="res://scripts/levelbutton.gd" id="4_6rap8"]
+[ext_resource type="FontFile" uid="uid://60tcyktevjmh" path="res://assets/fonts/Olondona.otf" id="5_nqdjo"]
+[ext_resource type="FontFile" uid="uid://duy4uija42wev" path="res://assets/fonts/OldLondon.ttf" id="6_aaiik"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mpmi"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6lf1r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7qtwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sajfq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qd50v"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_aaiik"]
+line_spacing = 0.0
+font = ExtResource("5_nqdjo")
+font_size = 45
+
+[sub_resource type="LabelSettings" id="LabelSettings_nqdjo"]
+line_spacing = 0.0
+font = ExtResource("5_nqdjo")
+font_size = 45
+
+[sub_resource type="LabelSettings" id="LabelSettings_rsw7q"]
+line_spacing = 0.0
+font = ExtResource("5_nqdjo")
+font_size = 45
+
+[sub_resource type="LabelSettings" id="LabelSettings_8mpmi"]
+line_spacing = 0.0
+font = ExtResource("5_nqdjo")
+font_size = 45
+
+[sub_resource type="LabelSettings" id="LabelSettings_6lf1r"]
+font = ExtResource("6_aaiik")
+font_size = 45
+font_color = Color(0.1866456, 0.77453065, 0.10866306, 1)
+outline_size = 10
 
 [node name="levelselect" type="Node2D" unique_id=217586770]
 script = ExtResource("1_xuh2y")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1325840877]
+texture_filter = 1
+texture_repeat = 2
+position = Vector2(256, 128)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_vttqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 1024, 512)
+
+[node name="1" type="Button" parent="." unique_id=318682110]
+offset_left = 172.0
+offset_top = 84.0
+offset_right = 236.0
+offset_bottom = 148.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qd50v")
+script = ExtResource("4_6rap8")
+
+[node name="Sprite2D" type="Sprite2D" parent="1" unique_id=338440391]
+position = Vector2(32, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("3_6rap8")
+
+[node name="Label" type="Label" parent="1" unique_id=2078032737]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = -23.75
+offset_right = 21.0
+offset_bottom = 23.75
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_aaiik")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2" type="Button" parent="." unique_id=1180296070]
+offset_left = 264.0
+offset_top = 84.0
+offset_right = 328.0
+offset_bottom = 148.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qd50v")
+script = ExtResource("4_6rap8")
+
+[node name="Sprite2D" type="Sprite2D" parent="2" unique_id=432164961]
+position = Vector2(32, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("3_6rap8")
+
+[node name="Label" type="Label" parent="2" unique_id=1944127360]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.0
+offset_top = -23.25
+offset_right = 22.0
+offset_bottom = 23.25
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_nqdjo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="3" type="Button" parent="." unique_id=1244015604]
+offset_left = 172.0
+offset_top = 176.0
+offset_right = 236.0
+offset_bottom = 240.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qd50v")
+script = ExtResource("4_6rap8")
+
+[node name="Sprite2D" type="Sprite2D" parent="3" unique_id=1759778686]
+position = Vector2(32, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("3_6rap8")
+
+[node name="Label" type="Label" parent="3" unique_id=1340283359]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.5
+offset_top = -24.25
+offset_right = 22.5
+offset_bottom = 24.25
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_rsw7q")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="4" type="Button" parent="." unique_id=1827512639]
+offset_left = 264.0
+offset_top = 176.0
+offset_right = 328.0
+offset_bottom = 240.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qd50v")
+script = ExtResource("4_6rap8")
+
+[node name="Sprite2D" type="Sprite2D" parent="4" unique_id=1497883330]
+position = Vector2(32, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("3_6rap8")
+
+[node name="Label" type="Label" parent="4" unique_id=836650374]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -25.75
+offset_right = 23.0
+offset_bottom = 25.75
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_8mpmi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1470607581]
+offset = Vector2(256, 128)
+
+[node name="Label" type="Label" parent="." unique_id=1402873525]
+offset_left = 135.0
+offset_top = 25.0
+offset_right = 367.0
+offset_bottom = 61.0
+text = "Level Selector"
+label_settings = SubResource("LabelSettings_6lf1r")
+
+[connection signal="button_down" from="1" to="1" method="_on_button_down"]
+[connection signal="mouse_entered" from="1" to="1" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="1" to="1" method="_on_mouse_exited"]
+[connection signal="button_down" from="2" to="2" method="_on_button_down"]
+[connection signal="mouse_entered" from="2" to="2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="2" to="2" method="_on_mouse_exited"]
+[connection signal="button_down" from="3" to="3" method="_on_button_down"]
+[connection signal="mouse_entered" from="3" to="3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="3" to="3" method="_on_mouse_exited"]
+[connection signal="button_down" from="4" to="4" method="_on_button_down"]
+[connection signal="mouse_entered" from="4" to="4" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="4" to="4" method="_on_mouse_exited"]

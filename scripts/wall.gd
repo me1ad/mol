@@ -5,6 +5,8 @@ extends Node2D
 const PILLAR_OLD = preload("uid://c0ywhntwrdbt")
 const PILLAR = preload("uid://0spgurrjyh2h")
 
+var player_in_area : bool = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if old:
@@ -12,11 +14,19 @@ func _ready() -> void:
 	else:
 		sprite_2d.set_texture(PILLAR)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func vanish() -> void:
 	queue_free()
-	
+
+func olden() -> void:
+	old = true
+	sprite_2d.set_texture(PILLAR_OLD)
+
+func revitalize() -> void:
+	old = false
+	sprite_2d.set_texture(PILLAR)
+
+func _on_interacted() -> void:
+	if old:
+		vanish()
+	else:
+		print("Whoops! Tough luck, buddy.")

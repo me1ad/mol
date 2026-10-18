@@ -1,26 +1,36 @@
 [gd_scene format=3 uid="uid://dtlt58huevony"]
 
 [ext_resource type="Script" uid="uid://ba6vubbpxpqjx" path="res://scripts/char.gd" id="1_idxh8"]
-[ext_resource type="Texture2D" uid="uid://1acudk7faxe4" path="res://assets/textures/slime2/slime_f1.png" id="2_1odpg"]
-[ext_resource type="Texture2D" uid="uid://cp3jneknfjj2t" path="res://assets/textures/slime2/slime_f2.png" id="3_wfdxj"]
-[ext_resource type="Texture2D" uid="uid://dapnb52g5xay2" path="res://assets/textures/slime2/slime_f3.png" id="4_uw0k7"]
-[ext_resource type="Texture2D" uid="uid://cwm2unlgqvjoj" path="res://assets/textures/slime2/slime_f4.png" id="5_j7sdd"]
-[ext_resource type="Texture2D" uid="uid://c2wq4o55if6i4" path="res://assets/textures/slime2/slime_f5.png" id="6_ooenv"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wojmw"]
+load_path = "res://.godot/imported/slime_f1.png-5fbbd96f006d2f1edcc0098b28ab6819.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pkhve"]
+load_path = "res://.godot/imported/slime_f2.png-118ac6d2a39e26ec2820abc06f0a072a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s4dg7"]
+load_path = "res://.godot/imported/slime_f4.png-98d7feb6bd6fa26aa3ad2e18314bfb66.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jy00i"]
+load_path = "res://.godot/imported/slime_f5.png-0d197db4bd2bea54e5559c1d6a8cc52d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ud387"]
+load_path = "res://.godot/imported/slime_f3.png-9393cca5c436583cf73e1771a7ceb0f4.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_txq1h"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_1odpg")
+"texture": SubResource("CompressedTexture2D_wojmw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_wfdxj")
+"texture": SubResource("CompressedTexture2D_pkhve")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_j7sdd")
+"texture": SubResource("CompressedTexture2D_s4dg7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_ooenv")
+"texture": SubResource("CompressedTexture2D_jy00i")
 }],
 "loop": 1,
 "name": &"default",
@@ -28,19 +38,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_1odpg")
+"texture": SubResource("CompressedTexture2D_wojmw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_wfdxj")
+"texture": SubResource("CompressedTexture2D_pkhve")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_uw0k7")
+"texture": SubResource("CompressedTexture2D_ud387")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_j7sdd")
+"texture": SubResource("CompressedTexture2D_s4dg7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_ooenv")
+"texture": SubResource("CompressedTexture2D_jy00i")
 }],
 "loop": 1,
 "name": &"idle",
@@ -48,16 +58,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_1odpg")
+"texture": SubResource("CompressedTexture2D_wojmw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_wfdxj")
+"texture": SubResource("CompressedTexture2D_pkhve")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_uw0k7")
+"texture": SubResource("CompressedTexture2D_ud387")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_j7sdd")
+"texture": SubResource("CompressedTexture2D_s4dg7")
 }],
 "loop": 1,
 "name": &"moving",
@@ -76,8 +86,6 @@ texture_filter = 1
 position = Vector2(0, -11)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_txq1h")
-animation = &"moving"
-frame_progress = 0.02989963
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=631844191]
 shape = SubResource("RectangleShape2D_evd5t")

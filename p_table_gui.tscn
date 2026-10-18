@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://wqxmkhttmnb2"]
+
+[ext_resource type="Texture2D" uid="uid://c6jr04d0ws0ee" path="res://assets/world/gui/keybox.png" id="1_i0ql7"]
+[ext_resource type="PackedScene" uid="uid://bsv8uao6g8ifl" path="res://scenes/gui/the_periodic_table.tscn" id="2_iwl2s"]
+[ext_resource type="PackedScene" uid="uid://cvvjim2qroy34" path="res://scenes/gui/element_button.tscn" id="3_iwl2s"]
+[ext_resource type="FontFile" uid="uid://cd0j116hchn4f" path="res://assets/fonts/Matcha Style.otf" id="4_udqjg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jcg3b"]
+font = ExtResource("4_udqjg")
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_h7uc7"]
+font = ExtResource("4_udqjg")
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_1krat"]
+font = ExtResource("4_udqjg")
+font_size = 8
+
+[node name="PTableGUI" type="Control" unique_id=1093034870]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1052674694]
+layout_mode = 0
+offset_left = 51.0
+offset_top = 21.0
+offset_right = 467.0
+offset_bottom = 237.0
+texture = ExtResource("1_i0ql7")
+
+[node name="ThePeriodicTable" parent="." unique_id=792273239 instance=ExtResource("2_iwl2s")]
+layout_mode = 1
+offset_left = 123.0
+offset_top = 52.0
+offset_right = 123.0
+offset_bottom = 52.0
+scale = Vector2(0.75, 0.75)
+
+[node name="ElementButton" parent="." unique_id=1061350082 instance=ExtResource("3_iwl2s")]
+layout_mode = 0
+offset_left = 365.0
+offset_top = 63.0
+offset_right = 381.0
+offset_bottom = 79.0
+scale = Vector2(2, 2)
+
+[node name="AtomicNumber" parent="ElementButton/VBoxContainer" parent_id_path=PackedInt32Array(1061350082, 267358571) index="0" unique_id=127335122]
+texture_filter = 1
+text = " #"
+
+[node name="Symbol" parent="ElementButton/VBoxContainer" parent_id_path=PackedInt32Array(1061350082, 267358571) index="1" unique_id=1102984171]
+texture_filter = 1
+text = "El"
+
+[node name="ElementName" parent="ElementButton/VBoxContainer" parent_id_path=PackedInt32Array(1061350082, 267358571) index="2" unique_id=957114191]
+texture_filter = 1
+text = "Element"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=790461429]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 135.0
+offset_right = 452.0
+offset_bottom = 179.0
+theme_override_constants/separation = 5
+
+[node name="AtomicNumber" type="Label" parent="VBoxContainer2" unique_id=443032201]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 0
+text = " # - # of protons"
+label_settings = SubResource("LabelSettings_jcg3b")
+
+[node name="Symbol" type="Label" parent="VBoxContainer2" unique_id=779184874]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 0
+text = "El - Element Symbol"
+label_settings = SubResource("LabelSettings_h7uc7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ElementName" type="Label" parent="VBoxContainer2" unique_id=1559009271]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 0
+text = "Element - Element name"
+label_settings = SubResource("LabelSettings_1krat")
+horizontal_alignment = 1
+
+[editable path="ElementButton"]

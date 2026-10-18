@@ -1,5 +1,13 @@
 extends Node2D
 
+@export var old := false
+
+func _ready():
+	if old:
+		$wall.olden()
+	else:
+		$wall.revitalize()
+
 func _on_clear_zone_body_entered(body: Node2D) -> void:
 	print("Something inside... sp00ky!")
 	if body.name == "Slime":
@@ -10,5 +18,3 @@ func _on_clear_zone_body_entered(body: Node2D) -> void:
 			get_tree().change_scene_to_file("res://levels/level"+ str(Globals.cur_level) + ".tscn");
 		else:
 			get_tree().change_scene_to_file("res://scenes/levelselect.tscn")
-func _ready():
-	$wall.vanish()

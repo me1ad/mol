@@ -17,6 +17,8 @@ font = ExtResource("2_h7uc7")
 font_size = 5
 
 [node name="ElementButton" type="Button" unique_id=1061350082]
+custom_minimum_size = Vector2(16, 16)
+custom_maximum_size = Vector2(24, 24)
 offset_right = 8.0
 offset_bottom = 8.0
 script = ExtResource("1_i0l8j")

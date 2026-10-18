@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dw0yjjc7tu6r1"]
 
 [ext_resource type="Texture2D" uid="uid://c6jr04d0ws0ee" path="res://assets/world/gui/keybox.png" id="1_7dxay"]
+[ext_resource type="Script" uid="uid://uubydxndxwkd" path="res://scripts/interact_area.gd" id="1_rbxfc"]
 [ext_resource type="Texture2D" uid="uid://dqxqjv20m70gt" path="res://assets/world/gui/E-key.png" id="2_rbxfc"]
 [ext_resource type="Script" uid="uid://djc10gpscgrtw" path="res://scripts/key.gd" id="3_sumon"]
 
@@ -8,6 +9,7 @@
 size = Vector2(52, 106)
 
 [node name="InteractArea" type="Node2D" unique_id=2024551468]
+script = ExtResource("1_rbxfc")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=925853239]
 
@@ -16,8 +18,9 @@ position = Vector2(26, 53)
 shape = SubResource("RectangleShape2D_8mpmi")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1719546645]
-top_level = true
-position = Vector2(19, 19)
+visible = false
+z_index = 4
+position = Vector2(19, 43)
 texture = ExtResource("1_7dxay")
 centered = false
 
@@ -25,3 +28,6 @@ centered = false
 texture = ExtResource("2_rbxfc")
 centered = false
 script = ExtResource("3_sumon")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

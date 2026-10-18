@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://deau4808xhr6e"]
+
+[ext_resource type="Script" uid="uid://dcojvabpssbv5" path="res://scripts/levelselect.gd" id="1_xuh2y"]
+
+[node name="levelselect" type="Node2D" unique_id=217586770]
+script = ExtResource("1_xuh2y")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1325840877]

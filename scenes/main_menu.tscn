@@ -1,0 +1,258 @@
+[gd_scene format=3 uid="uid://ce6w11bhh7o0k"]
+
+[ext_resource type="Script" uid="uid://cn8opbuwwdlrv" path="res://scripts/main_menu.gd" id="1_8ln24"]
+[ext_resource type="Texture2D" uid="uid://dl40kyi5arqal" path="res://assets/images/mainmenuss.png" id="1_wu84c"]
+[ext_resource type="FontFile" uid="uid://60tcyktevjmh" path="res://assets/fonts/Olondona.otf" id="2_8ln24"]
+[ext_resource type="Script" uid="uid://c3aav6u1ak40j" path="res://scripts/button.gd" id="3_rtw2f"]
+[ext_resource type="FontFile" uid="uid://cd0j116hchn4f" path="res://assets/fonts/Matcha Style.otf" id="4_oa1go"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qtwp"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(0, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dy7ct"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(256, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0o4t1"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(512, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0k4wn"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(768, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5v2v"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(1024, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iotk1"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(1280, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w44g7"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(1536, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cm266"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(1792, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8g3n"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(2048, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u0te"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(2304, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oiatc"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(2560, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mg3m2"]
+atlas = ExtResource("1_wu84c")
+region = Rect2(2816, 0, 256, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8mpmi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qtwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dy7ct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0o4t1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0k4wn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5v2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iotk1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w44g7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cm266")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8g3n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8u0te")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oiatc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mg3m2")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8mpmi"]
+font = ExtResource("2_8ln24")
+font_size = 50
+font_color = Color(0, 0.8062167, 0, 1)
+outline_size = 15
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mpmi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6lf1r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7qtwt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sajfq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6lf1r"]
+font = ExtResource("4_oa1go")
+font_size = 25
+font_color = Color(0, 0.76282156, 0.24181616, 1)
+outline_size = 10
+
+[node name="Main Menu" type="Node2D" unique_id=440873365]
+script = ExtResource("1_8ln24")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=574329532]
+position = Vector2(255.99998, 127.99999)
+scale = Vector2(1.9999999, 1.9999999)
+sprite_frames = SubResource("SpriteFrames_8mpmi")
+frame = 11
+frame_progress = 1.0
+
+[node name="mmgui" type="Control" parent="." unique_id=1399696310]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 256.0
+offset_top = 128.0
+offset_right = 256.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="mmgui" unique_id=1439712915]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.5
+offset_top = -20.0
+offset_right = 41.5
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="mmgui/CenterContainer" unique_id=856202322]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="mmgui/CenterContainer/VBoxContainer" unique_id=2068872949]
+layout_mode = 2
+text = "Slime Science"
+label_settings = SubResource("LabelSettings_8mpmi")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="mmgui/CenterContainer/VBoxContainer" unique_id=1867307699]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Play" type="Button" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer" unique_id=1285469902]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+text = " "
+script = ExtResource("3_rtw2f")
+
+[node name="Label" type="Label" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" unique_id=823042113]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "< Play >"
+label_settings = SubResource("LabelSettings_6lf1r")
+horizontal_alignment = 1
+
+[node name="Level Select" type="Button" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer" unique_id=1852077868]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+text = " "
+script = ExtResource("3_rtw2f")
+
+[node name="Label" type="Label" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Level Select" unique_id=1221011446]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "< level select >"
+label_settings = SubResource("LabelSettings_6lf1r")
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer" unique_id=509678121]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8mpmi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
+text = " "
+
+[node name="Label" type="Label" parent="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" unique_id=776908679]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "< quit >"
+label_settings = SubResource("LabelSettings_6lf1r")
+horizontal_alignment = 1
+
+[connection signal="button_down" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" to="." method="_on_play_button_down"]
+[connection signal="mouse_entered" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Play" method="_on_mouse_exited"]
+[connection signal="button_down" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Level Select" to="." method="_on_level_select_button_down"]
+[connection signal="mouse_entered" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Level Select" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Level Select" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Level Select" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Level Select" method="_on_mouse_exited"]
+[connection signal="button_down" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" to="." method="_on_quit_button_down"]
+[connection signal="mouse_entered" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" to="mmgui/CenterContainer/VBoxContainer/VBoxContainer/Quit" method="_on_mouse_exited"]

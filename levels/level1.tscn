@@ -1,16 +1,16 @@
 [gd_scene format=4 uid="uid://bxqhsqmn06ey4"]
 
-[ext_resource type="Texture2D" uid="uid://ije588n7l5e5" path="res://assets/textures/Tileset/tileset.png" id="1_7sl3q"]
-[ext_resource type="Texture2D" uid="uid://dp85h68ucoxge" path="res://assets/textures/Tileset/vegetation.png" id="2_bbnxr"]
-[ext_resource type="Texture2D" uid="uid://dess0h2kirxf5" path="res://assets/Sprite-0001.png" id="3_1gvrd"]
-[ext_resource type="Texture2D" uid="uid://cdwd6iuev8ihn" path="res://assets/textures/fix.png" id="3_cwb1r"]
-[ext_resource type="Texture2D" uid="uid://d1yhn6golnlhk" path="res://assets/textures/lab_table.png" id="4_vrpln"]
-[ext_resource type="Texture2D" uid="uid://bkbx8uyqg52qk" path="res://assets/textures/flask_stand.png" id="5_4o7n7"]
-[ext_resource type="PackedScene" uid="uid://dtlt58huevony" path="res://scenes/char.tscn" id="9_5fdeg"]
-[ext_resource type="PackedScene" uid="uid://0qmu2aet1v1p" path="res://scenes/ui.tscn" id="13_1rcbi"]
+[ext_resource type="Texture2D" uid="uid://dess0h2kirxf5" path="res://assets/images/levelbg.png" id="1_045es"]
+[ext_resource type="Texture2D" uid="uid://ije588n7l5e5" path="res://assets/textures/Tileset/tileset.png" id="2_omn1t"]
+[ext_resource type="Texture2D" uid="uid://dp85h68ucoxge" path="res://assets/textures/Tileset/vegetation.png" id="3_lf3p4"]
+[ext_resource type="Texture2D" uid="uid://cdwd6iuev8ihn" path="res://assets/textures/fix.png" id="4_yydhl"]
+[ext_resource type="Texture2D" uid="uid://d1yhn6golnlhk" path="res://assets/textures/lab_table.png" id="5_bekh1"]
+[ext_resource type="Texture2D" uid="uid://bkbx8uyqg52qk" path="res://assets/textures/flask_stand.png" id="6_8bcou"]
+[ext_resource type="PackedScene" uid="uid://dtlt58huevony" path="res://scenes/char.tscn" id="7_f7u7y"]
+[ext_resource type="PackedScene" uid="uid://0qmu2aet1v1p" path="res://scenes/ui.tscn" id="8_jq2cn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_py1m7"]
-texture = ExtResource("1_7sl3q")
+texture = ExtResource("2_omn1t")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -26,7 +26,7 @@ texture = ExtResource("1_7sl3q")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ig4cq"]
-texture = ExtResource("2_bbnxr")
+texture = ExtResource("3_lf3p4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -62,7 +62,7 @@ sources/0 = SubResource("TileSetAtlasSource_py1m7")
 sources/1 = SubResource("TileSetAtlasSource_ig4cq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oqv2k"]
-texture = ExtResource("1_7sl3q")
+texture = ExtResource("2_omn1t")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -78,7 +78,7 @@ texture = ExtResource("1_7sl3q")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2427"]
-texture = ExtResource("3_cwb1r")
+texture = ExtResource("4_yydhl")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -88,7 +88,7 @@ sources/0 = SubResource("TileSetAtlasSource_oqv2k")
 sources/1 = SubResource("TileSetAtlasSource_h2427")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i3wwp"]
-texture = ExtResource("1_7sl3q")
+texture = ExtResource("2_omn1t")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -117,7 +117,7 @@ texture = ExtResource("1_7sl3q")
 4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vxx3n"]
-texture = ExtResource("2_bbnxr")
+texture = ExtResource("3_lf3p4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -149,7 +149,7 @@ texture = ExtResource("2_bbnxr")
 7:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_umgof"]
-texture = ExtResource("4_vrpln")
+texture = ExtResource("5_bekh1")
 0:0/size_in_atlas = Vector2i(2, 1)
 0:0/0 = 0
 
@@ -160,7 +160,7 @@ sources/1 = SubResource("TileSetAtlasSource_vxx3n")
 sources/2 = SubResource("TileSetAtlasSource_umgof")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_amm62"]
-texture = ExtResource("1_7sl3q")
+texture = ExtResource("2_omn1t")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -176,7 +176,7 @@ texture = ExtResource("1_7sl3q")
 4:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnv6u"]
-texture = ExtResource("2_bbnxr")
+texture = ExtResource("3_lf3p4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -212,12 +212,12 @@ sources/0 = SubResource("TileSetAtlasSource_amm62")
 sources/1 = SubResource("TileSetAtlasSource_tnv6u")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6xugg"]
-texture = ExtResource("5_4o7n7")
+texture = ExtResource("6_8bcou")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2q6yb"]
-texture = ExtResource("4_vrpln")
+texture = ExtResource("5_bekh1")
 texture_region_size = Vector2i(32, 32)
 0:0/size_in_atlas = Vector2i(2, 1)
 0:0/0 = 0
@@ -234,7 +234,7 @@ sources/2 = SubResource("TileSetAtlasSource_2q6yb")
 z_index = -3
 position = Vector2(256, 128)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_1gvrd")
+texture = ExtResource("1_045es")
 
 [node name="Background" type="TileMapLayer" parent="World Textures" unique_id=1332118599]
 modulate = Color(0, 0.431373, 0.431373, 1)
@@ -276,7 +276,7 @@ tile_set = SubResource("TileSet_2fs7f")
 
 [node name="Entities" type="Node" parent="." unique_id=1516403924]
 
-[node name="CharacterBody2D" parent="." unique_id=1000566858 instance=ExtResource("9_5fdeg")]
+[node name="CharacterBody2D" parent="." unique_id=1000566858 instance=ExtResource("7_f7u7y")]
 position = Vector2(38, 110)
 scale = Vector2(0.5, 0.5)
 collision_layer = 3
@@ -287,4 +287,4 @@ limit_left = 0
 limit_top = 0
 limit_bottom = 256
 
-[node name="ui" parent="." unique_id=810727720 instance=ExtResource("13_1rcbi")]
+[node name="ui" parent="." unique_id=810727720 instance=ExtResource("8_jq2cn")]

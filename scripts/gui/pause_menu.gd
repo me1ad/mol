@@ -22,4 +22,7 @@ func _on_continue_pressed() -> void:
 	print("wabing!")
 
 func _on_main_menu_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://levels/main_menu.tscn")
+
+func _on_level_select_pressed() -> void:
+	get_tree().change_scene_to_file("res://levels/levelselect.tscn")

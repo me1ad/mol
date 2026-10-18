@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bsv8uao6g8ifl"]
 
-[ext_resource type="Script" uid="uid://wu04kx5h5aka" path="res://scripts/the_periodic_table.gd" id="1_xhtc5"]
+[ext_resource type="Script" uid="uid://wu04kx5h5aka" path="res://scripts/ptable/the_periodic_table.gd" id="1_xhtc5"]
 
 [node name="ThePeriodicTable" type="Control" unique_id=792273239]
 layout_mode = 3

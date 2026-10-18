@@ -89,3 +89,7 @@ sprite_frames = SubResource("SpriteFrames_txq1h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=631844191]
 shape = SubResource("RectangleShape2D_evd5t")
+
+[node name="Potions" type="Node2D" parent="." unique_id=896062396]
+position = Vector2(0, -28.571426)
+rotation = 0.9843657

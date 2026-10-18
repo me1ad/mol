@@ -1,4 +1,4 @@
-extends "res://scripts/button.gd"
+extends "res://scripts/gui/button.gd"
 
 
 func _ready() -> void:

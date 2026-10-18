@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cds8fiy0kqvlr"]
+
+[ext_resource type="Texture2D" uid="uid://dpma765raqkas" path="res://assets/world/Tileset/flask.png" id="1_ym5ma"]
+
+[node name="Potion" type="Sprite2D" unique_id=1754323739]
+scale = Vector2(4, 4)
+texture = ExtResource("1_ym5ma")

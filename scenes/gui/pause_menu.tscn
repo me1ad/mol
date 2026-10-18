@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bu0dys2afcxxv"]
 
-[ext_resource type="Script" uid="uid://nehy1sd4kf7t" path="res://scripts/pause_menu.gd" id="1_kukqi"]
+[ext_resource type="Script" uid="uid://nehy1sd4kf7t" path="res://scripts/gui/pause_menu.gd" id="1_kukqi"]
 [ext_resource type="Texture2D" uid="uid://c17v21nuccij3" path="res://assets/world/gui/pausebg.png" id="1_nwcfo"]
 [ext_resource type="FontFile" uid="uid://cd0j116hchn4f" path="res://assets/fonts/Matcha Style.otf" id="2_nwcfo"]
 
@@ -86,4 +86,5 @@ theme_override_fonts/font = ExtResource("2_nwcfo")
 text = "   main menu   "
 
 [connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="TextureRect/CenterContainer/VBoxContainer/Level Select" to="." method="_on_level_select_pressed"]
 [connection signal="button_down" from="TextureRect/CenterContainer/VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]

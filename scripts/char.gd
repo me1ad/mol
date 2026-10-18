@@ -6,14 +6,16 @@ const JUMP_VELOCITY = -400.0/1.5
 @onready var slime = get_node("AnimatedSprite2D")
 const MAX_ACCEL_TIME := .19
 var time_moving: float = 0
+const POTION = preload("uid://cds8fiy0kqvlr")
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	slime.play()
-	$AnimatedSprite2D.modulate = Color.WHITE
-	$AnimatedSprite2D.self_modulate = Color.WHITE
+	#$AnimatedSprite2D.modulate = Color.WHITE
+	#$AnimatedSprite2D.self_modulate = Color.WHITE
+	#get_potion()
 
 func _physics_process(delta):
 	if not Globals.paused:
@@ -46,3 +48,7 @@ func _physics_process(delta):
 			time_moving = 0
 
 		move_and_slide()
+
+func get_potion():
+	var potion = POTION.instantiate()
+	$Potions.add_child(potion)

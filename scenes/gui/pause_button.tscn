@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cc8yv0cb17ouu"]
 
 [ext_resource type="Texture2D" uid="uid://b1ekdbeu3l5cr" path="res://assets/world/gui/pause/pause_hover1.png" id="1_cessh"]
-[ext_resource type="Script" uid="uid://cm3q8eeqtokdk" path="res://scripts/Pause_Button.gd" id="2_enp5w"]
+[ext_resource type="Script" uid="uid://cm3q8eeqtokdk" path="res://scripts/gui/Pause_Button.gd" id="2_enp5w"]
 [ext_resource type="Texture2D" uid="uid://bc1p7ihgwvgmx" path="res://assets/world/gui/border.png" id="3_w8ru8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rhwpl"]

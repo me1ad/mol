@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://kl4xvqkjnp2l"]
 
-[ext_resource type="Script" uid="uid://ubu08j2e55y6" path="res://tutorial_text.gd" id="1_3uon5"]
+[ext_resource type="Script" uid="uid://ubu08j2e55y6" path="res://scripts/gui/tutorial_text.gd" id="1_3uon5"]
 [ext_resource type="FontFile" uid="uid://lgypdi3ec2es" path="res://assets/fonts/Matcha Style.ttf" id="2_1riog"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mpmi"]

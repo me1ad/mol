@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c78qcwv788l7h"]
+
+[ext_resource type="Script" uid="uid://4c5vvkwqf0kw" path="res://scripts/flask_table.gd" id="1_m8p76"]
+[ext_resource type="Texture2D" uid="uid://beujgray1p1xc" path="res://assets/world/Tileset/flask_stand - Copy.png" id="1_xnxgv"]
+[ext_resource type="PackedScene" uid="uid://dw0yjjc7tu6r1" path="res://scenes/world/interact_area.tscn" id="2_m8p76"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sx0w"]
+size = Vector2(72, 82)
+
+[node name="Flask Table" type="Node2D" unique_id=1834260728]
+script = ExtResource("1_m8p76")
+
+[node name="FlaskStandCopy" type="Sprite2D" parent="." unique_id=554594165]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_xnxgv")
+
+[node name="InteractArea" parent="." unique_id=2024551468 instance=ExtResource("2_m8p76")]
+position = Vector2(-27, -48)
+
+[node name="CollisionShape2D" parent="InteractArea/Area2D" parent_id_path=PackedInt32Array(2024551468, 925853239) index="0" unique_id=229020127]
+position = Vector2(27, 48)
+shape = SubResource("RectangleShape2D_3sx0w")
+
+[connection signal="interacted" from="InteractArea" to="." method="_on_interacted"]
+
+[editable path="InteractArea"]

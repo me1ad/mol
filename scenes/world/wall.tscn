@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://rm6vcbycrb1n" path="res://scripts/wall.gd" id="1_wykyb"]
 [ext_resource type="Texture2D" uid="uid://0spgurrjyh2h" path="res://assets/world/pillar.png" id="2_2ktk7"]
+[ext_resource type="Texture2D" uid="uid://c0ywhntwrdbt" path="res://assets/world/pillar-old.png" id="2_l0c6d"]
 [ext_resource type="PackedScene" uid="uid://dw0yjjc7tu6r1" path="res://scenes/world/interact_area.tscn" id="3_e00m8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e00m8"]
@@ -9,6 +10,8 @@ size = Vector2(22, 131)
 
 [node name="Wall" type="Node2D" unique_id=1742792421]
 script = ExtResource("1_wykyb")
+PILLAR_WEAK = ExtResource("2_l0c6d")
+PILLAR = ExtResource("2_2ktk7")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1013667668]
 position = Vector2(15, 45)

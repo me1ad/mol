@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dtlt58huevony" path="res://scenes/char.tscn" id="7_f7u7y"]
 [ext_resource type="PackedScene" uid="uid://0qmu2aet1v1p" path="res://scenes/gui/ui.tscn" id="8_jq2cn"]
 [ext_resource type="PackedScene" uid="uid://poc31g351o7l" path="res://scenes/world/level_end.tscn" id="9_omn1t"]
-[ext_resource type="PackedScene" uid="uid://kl4xvqkjnp2l" path="res://scenes/gui/tutorial_text.tscn" id="10_lf3p4"]
+[ext_resource type="PackedScene" uid="uid://kl4xvqkjnp2l" path="res://scenes/tutorial_text.tscn" id="10_lf3p4"]
 [ext_resource type="FontFile" uid="uid://lgypdi3ec2es" path="res://assets/fonts/Matcha Style.ttf" id="11_yydhl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_py1m7"]
@@ -304,7 +304,6 @@ limit_bottom = 256
 [node name="level_end" parent="." unique_id=1367717434 instance=ExtResource("9_omn1t")]
 position = Vector2(547, 62.999992)
 scale = Vector2(0.81, 0.81)
-old = true
 
 [node name="TutorialText" parent="." unique_id=1388177243 instance=ExtResource("10_lf3p4")]
 z_index = 10

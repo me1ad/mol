@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 100.0
-const JUMP_VELOCITY = -400.0/1.5
+const SPEED = 60.0
+const JUMP_VELOCITY = -350.0/1.5
 const MAX_ACCEL_TIME := .19
 var time_moving: float = 0
 

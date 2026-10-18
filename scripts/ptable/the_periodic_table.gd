@@ -1,6 +1,6 @@
 extends Control
 
-const ELEMENT_BUTTON = preload("res://scenes/element_button.tscn")
+const ELEMENT_BUTTON = preload("res://scenes/gui/element_button.tscn")
 
 @onready var grid: GridContainer = $MarginContainer/GridContainer
 

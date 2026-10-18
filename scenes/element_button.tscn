@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cvvjim2qroy34"]
 
 [ext_resource type="Texture2D" uid="uid://bxuyltpylsaif" path="res://assets/world/gui/levelbox.png" id="1_8x5hh"]
-[ext_resource type="Script" uid="uid://dgq5b8i6gmewx" path="res://scenes/element_button.gd" id="1_i0l8j"]
+[ext_resource type="Script" uid="uid://dgq5b8i6gmewx" path="res://scripts/element_button.gd" id="1_i0l8j"]
 [ext_resource type="FontFile" uid="uid://cd0j116hchn4f" path="res://assets/fonts/Matcha Style.otf" id="2_h7uc7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8x5hh"]

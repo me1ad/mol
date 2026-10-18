@@ -1,13 +1,26 @@
 [gd_scene format=3 uid="uid://rf323h5xlor4"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n5s7k"]
-size = Vector2(30, 240)
+[ext_resource type="Script" uid="uid://rm6vcbycrb1n" path="res://scripts/wall.gd" id="1_wykyb"]
+[ext_resource type="Texture2D" uid="uid://0spgurrjyh2h" path="res://assets/world/pillar.png" id="2_2ktk7"]
+[ext_resource type="PackedScene" uid="uid://dw0yjjc7tu6r1" path="res://scenes/interact_area.tscn" id="3_e00m8"]
 
-[node name="Node2D" type="Node2D" unique_id=1742792421]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e00m8"]
+size = Vector2(22, 131)
+
+[node name="Wall" type="Node2D" unique_id=1742792421]
+script = ExtResource("1_wykyb")
+old = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1013667668]
+position = Vector2(15, 45)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=987864068]
-shape = SubResource("RectangleShape2D_n5s7k")
+position = Vector2(2, 3.5)
+shape = SubResource("RectangleShape2D_e00m8")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=645184293]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=645184293]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_2ktk7")
+
+[node name="InteractArea2" parent="." unique_id=2024551468 instance=ExtResource("3_e00m8")]
+position = Vector2(-46, -10)

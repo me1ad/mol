@@ -17,6 +17,23 @@ animations = [{
 "texture": ExtResource("3_wfdxj")
 }, {
 "duration": 1.0,
+"texture": ExtResource("5_j7sdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ooenv")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1odpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wfdxj")
+}, {
+"duration": 1.0,
 "texture": ExtResource("4_uw0k7")
 }, {
 "duration": 1.0,
@@ -26,11 +43,11 @@ animations = [{
 "texture": ExtResource("6_ooenv")
 }],
 "loop": 1,
-"name": &"default",
-"speed": 5.0
+"name": &"idle",
+"speed": 4.0
 }, {
 "frames": [{
-"duration": 2.0,
+"duration": 1.0,
 "texture": ExtResource("2_1odpg")
 }, {
 "duration": 1.0,
@@ -44,13 +61,14 @@ animations = [{
 }],
 "loop": 1,
 "name": &"moving",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_evd5t"]
 size = Vector2(28, 28)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1474960479]
+[node name="Slime" type="CharacterBody2D" unique_id=1474960479]
+scale = Vector2(1.4, 1.4)
 script = ExtResource("1_idxh8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1988404292]
@@ -59,7 +77,7 @@ position = Vector2(0, -11)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_txq1h")
 animation = &"moving"
-frame_progress = 0.268283
+frame_progress = 0.02989963
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=631844191]
 shape = SubResource("RectangleShape2D_evd5t")

@@ -13,9 +13,8 @@ func _process(delta: float) -> void:
 
 
 func _on_play_button_down() -> void:
-	get_tree().change_scene_to_file("res://scenes/level%s.tscn" [Globals.level_reached])
-
-
+	get_tree().change_scene_to_file("res://levels/level" + str(Globals.level_reached) + ".tscn")
+	print("res://scenes/level" + str(Globals.level_reached) + ".tscn")
 func _on_level_select_button_down() -> void:
 	get_tree().change_scene_to_file("res://scenes/levelselect.tscn")
 

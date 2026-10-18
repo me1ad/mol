@@ -1,9 +1,9 @@
 extends Button
 
-var spill_anim = preload("res://assets/images/pause/hoverAnimation.tres")
-var normal_anim = preload("res://assets/images/pause/pause_unpressed.png")
-var pressed_anim = preload("res://assets/images/pause/pause_pressed.png")
-var unspill_anim = preload("res://assets/images/pause/unspillAnimation.tres")
+var spill_anim = preload("res://assets/world/gui/pause/hoverAnimation.tres")
+var normal_anim = preload("res://assets/world/gui/pause/pause_unpressed.png")
+var pressed_anim = preload("res://assets/world/gui/pause/pause_pressed.png")
+var unspill_anim = preload("res://assets/world/gui/pause/unspillAnimation.tres")
 @onready var pause_menu: Control = $"../Pause Menu"
 
 func change_anim(anim, spill: bool = false, unspill: bool = false):

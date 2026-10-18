@@ -36,7 +36,6 @@ func _physics_process(delta):
 		if direction:
 			time_moving += delta
 			velocity.x = direction * SPEED * max(0.1,min(time_moving/MAX_ACCEL_TIME,1))
-			print('time: %s, velocity: %d' % [time_moving, velocity.x])
 			slime.set_animation("moving")
 			
 		else: #slows down character if no input

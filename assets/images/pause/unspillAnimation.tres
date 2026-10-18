@@ -1,0 +1,79 @@
+[gd_resource type="AnimatedTexture" format=3 uid="uid://qoxj5mx6sasq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qeb5h"]
+load_path = "res://.godot/imported/pause_hover15.png-0938866b07191fc6250bb87e4798e4bc.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_eyypq"]
+load_path = "res://.godot/imported/pause_hover14.png-087d2064fda3d18d54a396ec340cce8d.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3prl8"]
+load_path = "res://.godot/imported/pause_hover5.png-450e6e79a907b776a9c5b71f06cd33ad.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_81wqf"]
+load_path = "res://.godot/imported/pause_hover4.png-bc0ef21b2df28d62493c6f598654693a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hdjm4"]
+load_path = "res://.godot/imported/pause_hover3.png-84a581993f3c31fb56f133d1b9c002ba.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_41he5"]
+load_path = "res://.godot/imported/pause_hover2.png-dbb4550a658b4b4bef1ac8810f84eefe.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rqd0x"]
+load_path = "res://.godot/imported/pause_hover1.png-2c9450f36712111c6ba16753577461a2.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a3mce"]
+load_path = "res://.godot/imported/pause_hover13.png-d2d1057bf5802bfc5353916d2afef327.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vuf5y"]
+load_path = "res://.godot/imported/pause_hover12.png-3d641b628e99db8fa6937b8390c80e93.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_knfp2"]
+load_path = "res://.godot/imported/pause_hover11.png-e6c845efbf81d35addd1ccaafb26f8ac.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n86og"]
+load_path = "res://.godot/imported/pause_hover10.png-6f6a0141cc79023c8b8ed4c7da0d0355.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tvupc"]
+load_path = "res://.godot/imported/pause_hover9.png-93063f9b01ce0de2c40508a1d0baede5.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jvk6x"]
+load_path = "res://.godot/imported/pause_hover8.png-2c99058b79d60cbee87fb1302ffe41bb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fwano"]
+load_path = "res://.godot/imported/pause_hover7.png-60ff59debdc510263c9bf1f5f1cd21bf.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_268jm"]
+load_path = "res://.godot/imported/pause_hover6.png-50b25be6d9110fe8267ca11a2f044c37.ctex"
+
+[resource]
+frames = 15
+speed_scale = 12.0
+frame_0/texture = SubResource("CompressedTexture2D_qeb5h")
+frame_1/texture = SubResource("CompressedTexture2D_eyypq")
+frame_1/duration = 1.0
+frame_2/texture = SubResource("CompressedTexture2D_a3mce")
+frame_2/duration = 1.0
+frame_3/texture = SubResource("CompressedTexture2D_vuf5y")
+frame_3/duration = 1.0
+frame_4/texture = SubResource("CompressedTexture2D_knfp2")
+frame_4/duration = 1.0
+frame_5/texture = SubResource("CompressedTexture2D_n86og")
+frame_5/duration = 1.0
+frame_6/texture = SubResource("CompressedTexture2D_tvupc")
+frame_6/duration = 1.0
+frame_7/texture = SubResource("CompressedTexture2D_jvk6x")
+frame_7/duration = 1.0
+frame_8/texture = SubResource("CompressedTexture2D_fwano")
+frame_8/duration = 1.0
+frame_9/texture = SubResource("CompressedTexture2D_268jm")
+frame_9/duration = 1.0
+frame_10/texture = SubResource("CompressedTexture2D_3prl8")
+frame_10/duration = 1.0
+frame_11/texture = SubResource("CompressedTexture2D_81wqf")
+frame_11/duration = 1.0
+frame_12/texture = SubResource("CompressedTexture2D_hdjm4")
+frame_12/duration = 1.0
+frame_13/texture = SubResource("CompressedTexture2D_41he5")
+frame_13/duration = 1.0
+frame_14/texture = SubResource("CompressedTexture2D_rqd0x")
+frame_14/duration = 1.0

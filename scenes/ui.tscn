@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://0qmu2aet1v1p"]
+
+[ext_resource type="PackedScene" uid="uid://cc8yv0cb17ouu" path="res://scenes/pause_button.tscn" id="1_x3nvd"]
+[ext_resource type="PackedScene" uid="uid://bu0dys2afcxxv" path="res://scenes/pause_menu.tscn" id="2_m6e0p"]
+
+[node name="ui" type="CanvasLayer" unique_id=393486679]
+
+[node name="Pause Button" parent="." unique_id=1233241899 instance=ExtResource("1_x3nvd")]
+metadata/_edit_use_anchors_ = true
+
+[node name="Pause Menu" parent="." unique_id=1022738745 instance=ExtResource("2_m6e0p")]
+visible = false
+scale = Vector2(0.75, 0.75)
+
+[connection signal="unpaused" from="Pause Menu" to="Pause Button" method="unpause"]

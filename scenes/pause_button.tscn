@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://cc8yv0cb17ouu"]
+
+[ext_resource type="Texture2D" uid="uid://b1ekdbeu3l5cr" path="res://assets/images/pause/pause_hover1.png" id="1_cessh"]
+[ext_resource type="Script" uid="uid://cm3q8eeqtokdk" path="res://scripts/Pause_Button.gd" id="2_enp5w"]
+[ext_resource type="Texture2D" uid="uid://bc1p7ihgwvgmx" path="res://assets/images/border.png" id="3_w8ru8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rhwpl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_taf8c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wm2q3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0x5a1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t38l0"]
+
+[node name="Pause Button" type="Button" unique_id=1040281875]
+texture_filter = 1
+custom_minimum_size = Vector2(24, 24)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_bottom = 48.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rhwpl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_taf8c")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wm2q3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0x5a1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_t38l0")
+action_mode = 0
+icon = ExtResource("1_cessh")
+expand_icon = true
+script = ExtResource("2_enp5w")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1879756305]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.083333336
+anchor_top = 0.083333336
+anchor_right = 0.9166667
+anchor_bottom = 0.9166667
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 0
+texture = ExtResource("3_w8ru8")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

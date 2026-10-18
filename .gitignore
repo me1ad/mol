@@ -1,2 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
+Slime_Science.exe
+Slime_Science.pck

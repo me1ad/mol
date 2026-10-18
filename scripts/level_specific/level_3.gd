@@ -31,6 +31,7 @@ func _on_potion_up():
 
 func _on_potion_down():
 	$Fire.fire()
+	$FirewoodInteract/Sprite2D.visible = false
 	
 func _on_fire_out():
 	wall.vanish()

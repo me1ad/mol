@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bp8mptpb6mvy1"]
+
+[ext_resource type="FontFile" uid="uid://duy4uija42wev" path="res://assets/fonts/OldLondon.ttf" id="1_52nqi"]
+[ext_resource type="Script" uid="uid://dfgiotr31lue4" path="res://scripts/fire.gd" id="1_xqmqg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8mpmi"]
+font = ExtResource("1_52nqi")
+font_size = 35
+font_color = Color(1, 0.4862745, 0.16078432, 1)
+shadow_size = 8
+shadow_color = Color(0.45490196, 0, 0, 0.2627451)
+
+[node name="Fire" type="Node2D" unique_id=2098359155]
+script = ExtResource("1_xqmqg")
+
+[node name="Label" type="Label" parent="." unique_id=1452402019]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -26.0
+offset_top = -14.0
+offset_right = 26.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fire"
+label_settings = SubResource("LabelSettings_8mpmi")
+
+[node name="Timer" type="Timer" parent="." unique_id=421053104]
+wait_time = 0.5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

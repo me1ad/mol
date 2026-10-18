@@ -304,6 +304,7 @@ limit_bottom = 256
 [node name="level_end" parent="." unique_id=1367717434 instance=ExtResource("9_omn1t")]
 position = Vector2(547, 62.999992)
 scale = Vector2(0.81, 0.81)
+weak = true
 
 [node name="TutorialText" parent="." unique_id=1388177243 instance=ExtResource("10_lf3p4")]
 z_index = 10

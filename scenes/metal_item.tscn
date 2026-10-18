@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://boakuhg8ll3nc"]
+
+[ext_resource type="Texture2D" uid="uid://dv1siq2fny4c4" path="res://assets/world/Tileset/metal.png" id="1_s0rta"]
+[ext_resource type="Script" uid="uid://doxuc5t40tyxt" path="res://scripts/metal_item.gd" id="2_frvl7"]
+
+[node name="metal_item" type="Sprite2D" unique_id=1650424784]
+scale = Vector2(2, 2)
+texture = ExtResource("1_s0rta")
+script = ExtResource("2_frvl7")

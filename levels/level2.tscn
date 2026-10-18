@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://p1q6h0x4ctsi"]
 
 [ext_resource type="Texture2D" uid="uid://dess0h2kirxf5" path="res://assets/world/levelbg.png" id="1_55gdq"]
+[ext_resource type="Script" uid="uid://xixom2m3tojh" path="res://scripts/level_specific/level_2.gd" id="1_bcewn"]
 [ext_resource type="Texture2D" uid="uid://ije588n7l5e5" path="res://assets/world/Tileset/tileset.png" id="2_crte6"]
 [ext_resource type="Texture2D" uid="uid://dp85h68ucoxge" path="res://assets/world/Tileset/vegetation.png" id="3_hq01p"]
 [ext_resource type="Texture2D" uid="uid://cdwd6iuev8ihn" path="res://assets/world/Tileset/fix.png" id="4_fjysh"]
@@ -238,6 +239,7 @@ font = ExtResource("11_fjysh")
 font_size = 8
 
 [node name="main" type="Node2D" unique_id=1046067815]
+script = ExtResource("1_bcewn")
 
 [node name="World Textures" type="Node" parent="." unique_id=1129340407]
 
@@ -326,8 +328,7 @@ offset_top = -12.0
 offset_right = 82.0
 offset_bottom = 15.0
 text = "Here's a flask of 
-boiling hot H2O. Pick it up 
-with < F >."
+boiling hot H2O. Pick it up."
 
 [node name="TutorialText2" parent="." unique_id=121583574 instance=ExtResource("10_hq01p")]
 position = Vector2(464.99997, 123.000015)

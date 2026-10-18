@@ -9,6 +9,7 @@ extends Node2D
 @export var PILLAR : CompressedTexture2D
 
 var player_in_area : bool = false
+@onready var slime: CharacterBody2D = $"../../Slime"
 
 signal wall_interacted_with
 
@@ -33,6 +34,11 @@ func revitalize() -> void:
 func _on_interacted() -> void:
 	if weak:
 		vanish()
+	elif slime.has_potion():
+		weaken()
+		modulate = Color.WHITE
+		Globals.wall_weakened.emit()
+		slime.remove_potion()
 	else:
 		print("Whoops! Tough luck, buddy.")
 	emit_signal("wall_interacted_with")

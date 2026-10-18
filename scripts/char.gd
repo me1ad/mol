@@ -3,10 +3,12 @@ extends CharacterBody2D
 
 const SPEED = 100.0
 const JUMP_VELOCITY = -400.0/1.5
-@onready var slime = get_node("AnimatedSprite2D")
 const MAX_ACCEL_TIME := .19
 var time_moving: float = 0
+
+@onready var slime = get_node("AnimatedSprite2D")
 const POTION = preload("uid://cds8fiy0kqvlr")
+const METAL_ITEM = preload("uid://boakuhg8ll3nc")
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -52,3 +54,22 @@ func _physics_process(delta):
 func get_potion():
 	var potion = POTION.instantiate()
 	$Potions.add_child(potion)
+
+func has_potion():
+	return len($Potions.get_children()) >= 1
+
+func get_metal():
+	var metal = METAL_ITEM.instantiate()
+	$Metals.add_child(metal)
+
+func has_metal():
+	return len($Metals.get_children()) >= 1
+
+func remove_metal():
+	$Metals.get_child(0).queue_free()
+
+func inventory_full():
+	return has_metal() or has_potion()
+
+func remove_potion():
+	$Potions.get_child(0).queue_free()

@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cx6cni0inlij3" path="res://scripts/gui/levelbutton.gd" id="4_6rap8"]
 [ext_resource type="FontFile" uid="uid://60tcyktevjmh" path="res://assets/fonts/Olondona.otf" id="5_nqdjo"]
 [ext_resource type="FontFile" uid="uid://duy4uija42wev" path="res://assets/fonts/OldLondon.ttf" id="6_aaiik"]
+[ext_resource type="PackedScene" uid="uid://b5wae4qnottft" path="res://scenes/confetti.tscn" id="7_ge46x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mpmi"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -29,11 +30,6 @@ font = ExtResource("5_nqdjo")
 font_size = 45
 
 [sub_resource type="LabelSettings" id="LabelSettings_rsw7q"]
-line_spacing = 0.0
-font = ExtResource("5_nqdjo")
-font_size = 45
-
-[sub_resource type="LabelSettings" id="LabelSettings_8mpmi"]
 line_spacing = 0.0
 font = ExtResource("5_nqdjo")
 font_size = 45
@@ -125,9 +121,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="3" type="Button" parent="." unique_id=1244015604]
-offset_left = 172.0
+offset_left = 218.0
 offset_top = 176.0
-offset_right = 236.0
+offset_right = 282.0
 offset_bottom = 240.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_8mpmi")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
@@ -158,40 +154,6 @@ label_settings = SubResource("LabelSettings_rsw7q")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="4" type="Button" parent="." unique_id=1827512639]
-offset_left = 264.0
-offset_top = 176.0
-offset_right = 328.0
-offset_bottom = 240.0
-theme_override_styles/normal = SubResource("StyleBoxFlat_8mpmi")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_6lf1r")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_7qtwt")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_sajfq")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_qd50v")
-script = ExtResource("4_6rap8")
-
-[node name="Sprite2D" type="Sprite2D" parent="4" unique_id=1497883330]
-position = Vector2(32, 32)
-scale = Vector2(2, 2)
-texture = ExtResource("3_6rap8")
-
-[node name="Label" type="Label" parent="4" unique_id=836650374]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -23.0
-offset_top = -25.75
-offset_right = 23.0
-offset_bottom = 25.75
-grow_horizontal = 2
-grow_vertical = 2
-label_settings = SubResource("LabelSettings_8mpmi")
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1470607581]
 offset = Vector2(256, 128)
 
@@ -203,6 +165,14 @@ offset_bottom = 61.0
 text = "Level Selector"
 label_settings = SubResource("LabelSettings_6lf1r")
 
+[node name="confetti" parent="." unique_id=1437508618 instance=ExtResource("7_ge46x")]
+visible = false
+position = Vector2(417, 192)
+
+[node name="confetti2" parent="." unique_id=2137111237 instance=ExtResource("7_ge46x")]
+visible = false
+position = Vector2(81, 187)
+
 [connection signal="button_down" from="1" to="1" method="_on_button_down"]
 [connection signal="mouse_entered" from="1" to="1" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="1" to="1" method="_on_mouse_exited"]
@@ -212,6 +182,3 @@ label_settings = SubResource("LabelSettings_6lf1r")
 [connection signal="button_down" from="3" to="3" method="_on_button_down"]
 [connection signal="mouse_entered" from="3" to="3" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="3" to="3" method="_on_mouse_exited"]
-[connection signal="button_down" from="4" to="4" method="_on_button_down"]
-[connection signal="mouse_entered" from="4" to="4" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="4" to="4" method="_on_mouse_exited"]

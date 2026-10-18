@@ -16,6 +16,7 @@ texture = ExtResource("1_xnxgv")
 
 [node name="InteractArea" parent="." unique_id=2024551468 instance=ExtResource("2_m8p76")]
 position = Vector2(-27, -48)
+item_giver = true
 
 [node name="CollisionShape2D" parent="InteractArea/Area2D" parent_id_path=PackedInt32Array(2024551468, 925853239) index="0" unique_id=229020127]
 position = Vector2(27, 48)

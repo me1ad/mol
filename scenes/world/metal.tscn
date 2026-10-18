@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bw5kyq8utuipl"]
+
+[ext_resource type="Script" uid="uid://b672qkwdiilea" path="res://scripts/metal.gd" id="1_7fppu"]
+[ext_resource type="Texture2D" uid="uid://dv1siq2fny4c4" path="res://assets/world/Tileset/metal.png" id="2_7fppu"]
+[ext_resource type="PackedScene" uid="uid://dw0yjjc7tu6r1" path="res://scenes/world/interact_area.tscn" id="3_cke7s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3sx0w"]
+size = Vector2(72, 82)
+
+[node name="Metal" type="Node2D" unique_id=1834260728]
+script = ExtResource("1_7fppu")
+
+[node name="MetalSprite" type="Sprite2D" parent="." unique_id=554594165]
+position = Vector2(-7.1525574e-07, 7.152558e-07)
+scale = Vector2(1.625, 1.625)
+texture = ExtResource("2_7fppu")
+
+[node name="InteractArea" parent="." unique_id=2024551468 instance=ExtResource("3_cke7s")]
+position = Vector2(-27, -48)
+item_giver = true
+
+[node name="CollisionShape2D" parent="InteractArea/Area2D" parent_id_path=PackedInt32Array(2024551468, 925853239) index="0" unique_id=229020127]
+position = Vector2(27, 48)
+shape = SubResource("RectangleShape2D_3sx0w")
+
+[connection signal="interacted" from="InteractArea" to="." method="_on_interacted"]
+
+[editable path="InteractArea"]

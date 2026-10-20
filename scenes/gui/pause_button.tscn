@@ -36,16 +36,12 @@ script = ExtResource("2_enp5w")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1879756305]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.083333336
-anchor_top = 0.083333336
-anchor_right = 0.9166667
-anchor_bottom = 0.9166667
-offset_left = -4.0
-offset_top = -4.0
-offset_right = 4.0
-offset_bottom = 4.0
-grow_horizontal = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("3_w8ru8")
+expand_mode = 1
 
 [connection signal="button_down" from="." to="." method="_on_button_down"]

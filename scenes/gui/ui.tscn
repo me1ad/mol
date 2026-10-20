@@ -6,6 +6,12 @@
 [node name="ui" type="CanvasLayer" unique_id=393486679]
 
 [node name="Pause Button" parent="." unique_id=1233241899 instance=ExtResource("1_x3nvd")]
+custom_minimum_size = Vector2(12, 12)
+custom_maximum_size = Vector2(26, 26)
+offset_left = -44.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 44.0
 metadata/_edit_use_anchors_ = true
 
 [node name="Pause Menu" parent="." unique_id=1022738745 instance=ExtResource("2_m6e0p")]

@@ -1,5 +1,8 @@
 extends Button
 
+# all of this is because texturebutton doesn't seem to work with an animatedTexture
+
+
 var spill_anim = preload("res://assets/world/gui/pause/hoverAnimation.tres")
 var normal_anim = preload("res://assets/world/gui/pause/pause_unpressed.png")
 var pressed_anim = preload("res://assets/world/gui/pause/pause_pressed.png")

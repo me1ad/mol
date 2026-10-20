@@ -9,10 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://bkbx8uyqg52qk" path="res://assets/world/Tileset/flask_stand.png" id="6_6mfmt"]
 [ext_resource type="PackedScene" uid="uid://dtlt58huevony" path="res://scenes/char.tscn" id="7_qegch"]
 [ext_resource type="PackedScene" uid="uid://0qmu2aet1v1p" path="res://scenes/gui/ui.tscn" id="8_jai45"]
-[ext_resource type="PackedScene" uid="uid://poc31g351o7l" path="res://scenes/world/level_end.tscn" id="9_jj0ry"]
-[ext_resource type="PackedScene" uid="uid://kl4xvqkjnp2l" path="res://scenes/tutorial_text.tscn" id="10_hq01p"]
+[ext_resource type="PackedScene" uid="uid://poc31g351o7l" path="res://scenes/tangible_worldly_nodes/level_end.tscn" id="9_jj0ry"]
+[ext_resource type="PackedScene" uid="uid://kl4xvqkjnp2l" path="res://scenes/sfx/tutorial_text.tscn" id="10_hq01p"]
 [ext_resource type="FontFile" uid="uid://lgypdi3ec2es" path="res://assets/fonts/Matcha Style.ttf" id="11_fjysh"]
-[ext_resource type="PackedScene" uid="uid://c78qcwv788l7h" path="res://scenes/world/flask_table.tscn" id="12_fjysh"]
+[ext_resource type="PackedScene" uid="uid://c78qcwv788l7h" path="res://scenes/tangible_worldly_nodes/flask_table.tscn" id="12_fjysh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_py1m7"]
 texture = ExtResource("2_crte6")

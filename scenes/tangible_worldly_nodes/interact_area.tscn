@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dw0yjjc7tu6r1"]
 
 [ext_resource type="Texture2D" uid="uid://c6jr04d0ws0ee" path="res://assets/world/gui/keybox.png" id="1_7dxay"]
-[ext_resource type="Script" uid="uid://uubydxndxwkd" path="res://scripts/interact_area.gd" id="1_rbxfc"]
+[ext_resource type="Script" uid="uid://uubydxndxwkd" path="res://scripts/world/interact_area.gd" id="1_rbxfc"]
 [ext_resource type="Texture2D" uid="uid://dqxqjv20m70gt" path="res://assets/world/gui/E-key.png" id="2_rbxfc"]
-[ext_resource type="Script" uid="uid://djc10gpscgrtw" path="res://scripts/key.gd" id="3_sumon"]
+[ext_resource type="Script" uid="uid://djc10gpscgrtw" path="res://scripts/gui/key.gd" id="3_sumon"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8mpmi"]
 size = Vector2(52, 106)

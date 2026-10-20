@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://bkbx8uyqg52qk" path="res://assets/world/Tileset/flask_stand.png" id="6_8bcou"]
 [ext_resource type="PackedScene" uid="uid://dtlt58huevony" path="res://scenes/char.tscn" id="7_f7u7y"]
 [ext_resource type="PackedScene" uid="uid://0qmu2aet1v1p" path="res://scenes/gui/ui.tscn" id="8_jq2cn"]
-[ext_resource type="PackedScene" uid="uid://poc31g351o7l" path="res://scenes/world/level_end.tscn" id="9_omn1t"]
-[ext_resource type="PackedScene" uid="uid://kl4xvqkjnp2l" path="res://scenes/tutorial_text.tscn" id="10_lf3p4"]
+[ext_resource type="PackedScene" uid="uid://poc31g351o7l" path="res://scenes/tangible_worldly_nodes/level_end.tscn" id="9_omn1t"]
+[ext_resource type="PackedScene" uid="uid://kl4xvqkjnp2l" path="res://scenes/sfx/tutorial_text.tscn" id="10_lf3p4"]
 [ext_resource type="FontFile" uid="uid://lgypdi3ec2es" path="res://assets/fonts/Matcha Style.ttf" id="11_yydhl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_py1m7"]

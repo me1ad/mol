@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://poc31g351o7l"]
 
-[ext_resource type="PackedScene" uid="uid://rf323h5xlor4" path="res://scenes/world/wall.tscn" id="1_07sjm"]
-[ext_resource type="Script" uid="uid://bw64kgj0yl5hu" path="res://scripts/level_end.gd" id="1_8dmmi"]
+[ext_resource type="PackedScene" uid="uid://rf323h5xlor4" path="res://scenes/tangible_worldly_nodes/wall.tscn" id="1_07sjm"]
+[ext_resource type="Script" uid="uid://bw64kgj0yl5hu" path="res://scripts/level_specific/level_end.gd" id="1_8dmmi"]
 [ext_resource type="Texture2D" uid="uid://bgedxuetl8d0d" path="res://assets/world/Tileset/fogss.png" id="2_jgevt"]
-[ext_resource type="PackedScene" uid="uid://dteprd70wnjn1" path="res://scenes/world/clear_zone.tscn" id="3_jgevt"]
+[ext_resource type="PackedScene" uid="uid://dteprd70wnjn1" path="res://scenes/tangible_worldly_nodes/clear_zone.tscn" id="3_jgevt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8dmmi"]
 texture = ExtResource("2_jgevt")

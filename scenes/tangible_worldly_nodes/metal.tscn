@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bw5kyq8utuipl"]
 
-[ext_resource type="Script" uid="uid://b672qkwdiilea" path="res://scripts/metal.gd" id="1_7fppu"]
+[ext_resource type="Script" uid="uid://b672qkwdiilea" path="res://scripts/player_resources/metal.gd" id="1_7fppu"]
 [ext_resource type="Texture2D" uid="uid://dv1siq2fny4c4" path="res://assets/world/Tileset/metal.png" id="2_7fppu"]
-[ext_resource type="PackedScene" uid="uid://dw0yjjc7tu6r1" path="res://scenes/world/interact_area.tscn" id="3_cke7s"]
+[ext_resource type="PackedScene" uid="uid://dw0yjjc7tu6r1" path="res://scenes/tangible_worldly_nodes/interact_area.tscn" id="3_cke7s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3sx0w"]
 size = Vector2(72, 82)

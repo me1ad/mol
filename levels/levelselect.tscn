@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://cx6cni0inlij3" path="res://scripts/gui/levelbutton.gd" id="4_6rap8"]
 [ext_resource type="FontFile" uid="uid://60tcyktevjmh" path="res://assets/fonts/Olondona.otf" id="5_nqdjo"]
 [ext_resource type="FontFile" uid="uid://duy4uija42wev" path="res://assets/fonts/OldLondon.ttf" id="6_aaiik"]
-[ext_resource type="PackedScene" uid="uid://b5wae4qnottft" path="res://scenes/confetti.tscn" id="7_ge46x"]
+[ext_resource type="PackedScene" uid="uid://b5wae4qnottft" path="res://scenes/sfx/confetti.tscn" id="7_ge46x"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mpmi"]
 bg_color = Color(0.6, 0.6, 0.6, 0)

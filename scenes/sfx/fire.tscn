@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bp8mptpb6mvy1"]
 
 [ext_resource type="FontFile" uid="uid://duy4uija42wev" path="res://assets/fonts/OldLondon.ttf" id="1_52nqi"]
-[ext_resource type="Script" uid="uid://dfgiotr31lue4" path="res://scripts/fire.gd" id="1_xqmqg"]
+[ext_resource type="Script" uid="uid://dfgiotr31lue4" path="res://scripts/effects/fire.gd" id="1_xqmqg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8mpmi"]
 font = ExtResource("1_52nqi")
